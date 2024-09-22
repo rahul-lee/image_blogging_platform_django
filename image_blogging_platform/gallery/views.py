@@ -14,7 +14,7 @@ def product_detail(request, pk):
 
 
 def edit_product(request, pk):
-    product = get_object_or_404(Product, pk=pk)  # Correctly specify the model
+    product = get_object_or_404(Product, pk=pk) 
     if request.method == 'POST':
         form = ProductForm(request.POST, instance=product)
         if form.is_valid():
@@ -25,7 +25,7 @@ def edit_product(request, pk):
     return render(request, 'gallery/edit.html', {'form': form})
 
 def delete_product(request, pk):
-    product = get_object_or_404(Product, pk=pk)  # Correctly specify the model
+    product = get_object_or_404(Product, pk=pk) 
     if request.method == 'POST':
         product.delete()
         return redirect('product_list')
