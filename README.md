@@ -15,12 +15,7 @@ SQLite (default database)
 Installation
 
 
-Clone the repository:
-git clone https://github.com/yourusername/image_blogging_platform_django.git
-cd image_blogging_platform_django
 Set up a virtual environment:
-
-
 python -m venv env
 source env/bin/activate  # On Windows use `env\Scripts\activate`
 
